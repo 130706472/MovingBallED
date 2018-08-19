@@ -8,3 +8,4 @@
 3. 用 pygame.mouse.get_pos() 取得滑鼠位置
 '''
 import pygame
+# github 共享
