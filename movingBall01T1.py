@@ -8,4 +8,19 @@
 3. 用 pygame.mouse.get_pos() 取得滑鼠位置
 '''
 import pygame
-# github 共享
+screen = pygame.display.set_mode((640,480))#
+done = False
+barW = 60
+barH = 30
+barY = 440
+
+while not done:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            done = True
+    screen.fill((200,255,0))
+    mouseX,mouseY = pygame.mouse.get_pos()
+    pygame.draw.rect(screen,(0,100,100),[mouseX,barY,barW,barH])
+    
+    pygame.display.update()
+
